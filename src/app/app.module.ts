@@ -35,14 +35,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { TopNavComponent } from './layout/top-nav/top-nav.component';
-import {RouterModule} from "@angular/router";
-import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavComponent,
-    ProductsComponent
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
@@ -78,8 +75,7 @@ import { ProductsComponent } from './products/products.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule,
-    RouterModule
+    MatPaginatorModule
   ],
   // schemas: [
   //   CUSTOM_ELEMENTS_SCHEMA
